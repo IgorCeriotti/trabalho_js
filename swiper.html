@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .bgimg {
+            background-image: url('m1.jpg');
+            background-size: 100% 100%;
+            font-size: 150px;
+            color: white;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            min-width: 100%;
+            min-height: 100%;
+
+            opacity: 0.8;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .bgimg2 {
+            background-size: 100% 100%;
+            font-size: 100px;
+            color: white;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            min-width: 100%;
+            min-height: 100%;
+
+            opacity: 0.8;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 110px;
+
+        }
+
+        .bgimg3 {
+            background-size: 100% 100%;
+            font-size: 200px;
+            color: #cd3361;
+
+
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 23px;
+
+        }
+
+        .uu1 {
+            background-image: url('p1.jpg');
+            background-size: 100% 100%;
+            font-size: 150px;
+            color: white;
+
+            position: fixed;
+
+            min-width: 100%;
+            min-height: 100%;
+
+            opacity: 0.8;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+
+        .uu2 {
+            background-size: 100% 100%;
+            font-size: 135px;
+            color: #4135e6;
+
+
+
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            height: 23px;
+
+            margin-bottom: 900px;
+
+
+            opacity: 2.0;
+
+
+        }
+
+        .myButton {
+            box-shadow: inset 0px -50px 0px 0px #aaf1b2;
+            background-color: #aaf1b2;
+            border: 1px solid #aaf1b2;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 50px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #aaf1b2;
+            margin-top: 150px;
+            margin-left: 120px;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+
+        .container {
+            margin: auto;
+        }
+
+        .contact {
+            background-image: url('f1.jpg');
+            background-size: 100% 100%;
+            font-size: 135px;
+            color: white;
+
+            position: fixed;
+
+            min-width: 100%;
+            min-height: 100%;
+
+            opacity: 0.8;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .contact2 {
+            background-size: 100% 100%;
+            font-size: 155px;
+            color: #e86b91;
+
+
+
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            height: 23px;
+
+            margin-bottom: 900px;
+            margin-right: 25px;
+
+
+            opacity: 1.2;
+
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="bgimg">
+                    Hello,
+                </div>
+                <div class="bgimg2">
+                    Scroll down to know more
+                </div>
+                <div class="bgimg3">
+                    Chefchaouen
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+
+                <div class="uu1">
+                    <div class="container">
+                        <a href="#" class="myButton">Eat</a>
+                        <a href="#" class="myButton">Fun</a>
+                        <a href="#" class="myButton">Explore</a>
+                    </div>
+                </div>
+
+                <div class="uu2">
+                    The blue pearl of Morroco
+                </div>
+
+            </div>
+
+            <div class="swiper-slide">
+                <div class="contact">
+                    Smile, too.
+                </div>
+
+                <div class="contact2">
+                        Visit
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+</body>
+
+</html>
